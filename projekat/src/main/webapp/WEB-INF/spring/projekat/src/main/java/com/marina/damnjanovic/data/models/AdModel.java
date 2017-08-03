@@ -20,7 +20,7 @@ public class AdModel {
 	public String title;
 	
 	@Column(name="description")
-	public String description;
+	public String desription;
 	
 	@Column(name="deadline")
 	public String deadline;
@@ -38,10 +38,10 @@ public class AdModel {
 		
 	}
 
-	public AdModel(int id, String title, String description, String deadline, String category, String city,
+	public AdModel(int id, String title, String desription, String deadline, String category, String city,
 			String company) {
 		this.title = title;
-		this.description = description;
+		this.desription = desription;
 		this.deadline = deadline;
 		this.category = category;
 		this.city = city;
@@ -56,12 +56,12 @@ public class AdModel {
 		this.title = title;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getDesription() {
+		return desription;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDesription(String desription) {
+		this.desription = desription;
 	}
 
 	public String getDeadline() {
@@ -98,7 +98,7 @@ public class AdModel {
 
 	@Override
 	public String toString() {
-		return "AdModel [title=" + title + ", description=" + description + ", deadline=" + deadline + ", category="
+		return "AdModel [title=" + title + ", desription=" + desription + ", deadline=" + deadline + ", category="
 				+ category + ", city=" + city + ", company=" + company + "]";
 	}
 	
