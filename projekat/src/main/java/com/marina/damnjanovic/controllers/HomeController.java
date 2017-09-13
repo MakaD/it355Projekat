@@ -20,4 +20,9 @@ public class HomeController {
 	public String internships(){
 		return "internships";
 	}
+	
+	@RequestMapping("/internship_item")
+	public String internshipItem(){
+		return "internships_item";
+	}
 }

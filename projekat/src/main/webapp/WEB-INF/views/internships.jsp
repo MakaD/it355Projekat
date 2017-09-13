@@ -43,7 +43,16 @@
         <div class="row">
             <div class=" col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="<spring:url value="resources/images/endava.jpg"/>" alt="">
+                    <img class="img-responsive" src="<spring:url value="resources/images/endava.jpg"/>" alt="" style="min-height:50px;height:50px;">
+                </a>
+                <h3>
+                    <a href="<spring:url value="/internship_item"/>">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class=" col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="<spring:url value="resources/images/rtv.png"/>" alt="" style="min-height:50px;height:50px;">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -52,16 +61,7 @@
             </div>
             <div class=" col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="<spring:url value="resources/images/advokatskakomora.jpg"/>" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class=" col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="<spring:url value="resources/images/erste.jpg"/>" alt="">
+                    <img class="img-responsive" src="<spring:url value="resources/images/erste.jpg"/>" alt="" style="min-height:50px;height:50px;">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -77,7 +77,7 @@
         <div class="row">
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="<spring:url value="resources/images/levi9.jpg"/>" alt="">
+                    <img class="img-responsive" src="<spring:url value="resources/images/levi9.jpg"/>" alt="" style="min-height:50px;height:50px;">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -86,7 +86,7 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="<spring:url value="resources/images/microsoft.jpg"/>" alt="">
+                    <img class="img-responsive" src="<spring:url value="resources/images/microsoft.jpg"/>" alt="" style="min-height:50px;height:50px;">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -95,7 +95,7 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="<spring:url value="resources/images/stmedicina.jpg"/>" alt="">
+                    <img class="img-responsive" src="<spring:url value="resources/images/stmedicina.jpg"/>" alt="" style="min-height:50px;height:50px;">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>

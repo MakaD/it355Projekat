@@ -59,8 +59,10 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">Every start is difficult</h2>
+                    <p class="lead">
+                    	We know how much support and opportunities are important at the very beginning of a young man's career.<br><br>Work surrounded by great people, top creative people, who want to involve interns in their team. Be sure that work in an incentive environment is the greatest benefit that can be obtained.
+                    </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="resources/images/working.jpg" alt="">
@@ -80,7 +82,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Grab your very best chance here:</h2>
+                    <h2>Grab your very best chance:</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
