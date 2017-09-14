@@ -8,30 +8,30 @@ import javax.persistence.Id;
 import javax.persistence.Table;  
 
 @Entity
-@Table(name="proizvod")
+@Table(name="oglas")
 public class AdModel {
 
 	@Id
-	@Column(name="id_komponente")
+	@Column(name="id_oglasa")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)  
 	private int id;
 	
-	@Column(name="title")
+	@Column(name="naslov")
 	public String title;
 	
-	@Column(name="description")
+	@Column(name="opis")
 	public String description;
 	
-	@Column(name="deadline")
+	@Column(name="rok")
 	public String deadline;
 	
-	@Column(name="category")
+	@Column(name="kategorija")
 	public String category;
 	
-	@Column(name="city")
+	@Column(name="grad")
 	public String city;
 	
-	@Column(name="company")
+	@Column(name="kompanija")
 	public String company;
 	
 	public AdModel() {

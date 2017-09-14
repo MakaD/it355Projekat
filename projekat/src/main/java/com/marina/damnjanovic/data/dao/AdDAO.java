@@ -1,10 +1,9 @@
-package com.marina.damnjanovic.data.services;
+package com.marina.damnjanovic.data.dao;
 
 import java.util.List;
-
 import com.marina.damnjanovic.data.models.AdModel;
 
-public interface AdService {
+public interface AdDAO {
 
 	public void addAd(AdModel ad);
 	public void updateAd(AdModel ad);
