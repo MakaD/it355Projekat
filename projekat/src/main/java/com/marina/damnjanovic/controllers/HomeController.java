@@ -21,8 +21,5 @@ public class HomeController {
 		return "internships";
 	}
 	
-	@RequestMapping("/internship_item")
-	public String internshipItem(){
-		return "internship_item";
-	}
+
 }
