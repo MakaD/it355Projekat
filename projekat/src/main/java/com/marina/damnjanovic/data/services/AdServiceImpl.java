@@ -2,14 +2,17 @@ package com.marina.damnjanovic.data.services;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.marina.damnjanovic.data.dao.AdDAO;
 import com.marina.damnjanovic.data.models.AdModel;
 
+@Service
 public class AdServiceImpl implements AdService{
 	
+	@Autowired
 	private AdDAO adDAO;
 
 	public void setAdDAO(AdDAO adDAO) {

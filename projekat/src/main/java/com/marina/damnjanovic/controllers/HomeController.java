@@ -21,5 +21,9 @@ public class HomeController {
 		return "internships";
 	}
 	
+	@RequestMapping("/marina")
+	public String marina(){
+		return "marina";
+	}
 
 }

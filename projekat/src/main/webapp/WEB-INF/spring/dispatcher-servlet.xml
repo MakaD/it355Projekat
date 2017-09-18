@@ -17,7 +17,6 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		<property name="suffix" value=".jsp"/>
 	</bean>
 	
-	<bean id="adService" class="com.marina.damnjanovic.data.services.AdService"/>
 	
 	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 	

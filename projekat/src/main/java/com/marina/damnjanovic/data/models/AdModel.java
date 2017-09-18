@@ -12,26 +12,20 @@ import javax.persistence.Table;
 public class AdModel {
 
 	@Id
-	@Column(name="id_oglasa")
+	@Column(name="id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)  
 	private int id;
 	
-	@Column(name="naslov")
 	public String title;
 	
-	@Column(name="opis")
 	public String description;
 	
-	@Column(name="rok")
 	public String deadline;
 	
-	@Column(name="kategorija")
 	public String category;
 	
-	@Column(name="grad")
 	public String city;
 	
-	@Column(name="kompanija")
 	public String company;
 	
 	public AdModel() {
