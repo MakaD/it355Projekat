@@ -1,3 +1,4 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
@@ -26,7 +27,50 @@
 
 <jsp:include page="../views/fragments/header.jsp"></jsp:include>
 
-<h3>Marina</h3>
+<div class="container">
+
+		<!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+            	<br>
+                <h1 class="page-header">Your future 
+                    <small>starts here</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+<div class="row">
+
+<h1>List of ads</h1>
+<p>Here you can see the list of the ads, edit them, remove or update.</p>
+<table border="1px" cellpadding="0" cellspacing="0" >
+<thead>
+<tr>
+<th width="10%">id</th><th width="15%">title</th><th width="10%">company</th><th width="10%">actions</th>
+</tr>
+</thead>
+<tbody>
+<c:forEach var="ad" items="${oglas}">
+<tr>
+	<td>${ad.id_oglasa}</td>
+	<td>${ad.naslov}</td>
+	<td>${ad.rok}</td>
+	<td>
+	<a href="">Edit</a><br/>
+	<a href="">Delete</a><br/>
+	</td>
+</tr>
+</c:forEach>
+</tbody>
+</table>
+
+</div>
+
+<p><a href="${pageContext.request.contextPath}/home.html">Home page</a></p>
+
+</div>
 
 <jsp:include page="../views/fragments/footer.jsp"></jsp:include>
 
