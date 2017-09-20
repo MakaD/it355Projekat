@@ -10,7 +10,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
 	<mvc:annotation-driven/>
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 	<context:component-scan base-package="com.marina.damnjanovic.controllers"/>
+	
+
 
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/"/>
@@ -18,16 +22,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	</bean>
 	
 	
-	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
-	
-	
-	
-	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"  
         destroy-method="close">  
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />  
-        <property name="url"  
-            value="jdbc:mysql://localhost:3306/projekat" />
+        <property name="url" value="jdbc:mysql://localhost:3306/project" />
         <property name="username" value="root" />  
         <property name="password" value="" />  
     </bean> 
@@ -36,6 +34,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	<bean id="hibernate4AnnotatedSessionFactory"  
         class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">  
         <property name="dataSource" ref="dataSource" />  
+        <property name="packagesToScan" value="com.marina.damnjanovic.**.*" />
         <property name="annotatedClasses">  
             <list>  
                 <value>com.marina.damnjanovic.data.models.AdModel</value>  
@@ -49,16 +48,12 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         </property>  
     </bean>  
 	
-	<tx:annotation-driven transaction-manager="transactionManager"/>
 	
 	<bean id="transactionManager"  
         class="org.springframework.orm.hibernate4.HibernateTransactionManager">  
         <property name="sessionFactory"  
             ref="hibernate4AnnotatedSessionFactory" />  
     </bean> 
-	
-	
-	
 	
 	
 <mvc:default-servlet-handler/>

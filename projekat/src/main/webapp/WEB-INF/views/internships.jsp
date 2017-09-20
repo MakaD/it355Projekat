@@ -46,7 +46,7 @@
                     <img class="img-responsive" src="<spring:url value="resources/images/endava.jpg"/>" alt="" style="min-height:50px;height:50px;">
                 </a>
                 <h3>
-                    <a href="<spring:url value="/marina"/>">Project Name</a>
+                    <a href="<spring:url value="/table"/>">Project Name</a>
                 </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>

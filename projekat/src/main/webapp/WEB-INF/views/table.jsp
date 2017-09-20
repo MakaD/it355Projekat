@@ -52,11 +52,11 @@
 </tr>
 </thead>
 <tbody>
-<c:forEach var="ad" items="${oglas}">
+<c:forEach var="ad" items="${ads}">
 <tr>
-	<td>${ad.id_oglasa}</td>
-	<td>${ad.naslov}</td>
-	<td>${ad.rok}</td>
+	<td>${ad.id}</td>
+	<td>${ad.title}</td>
+	<td>${ad.deadline}</td>
 	<td>
 	<a href="">Edit</a><br/>
 	<a href="">Delete</a><br/>
@@ -68,7 +68,8 @@
 
 </div>
 
-<p><a href="${pageContext.request.contextPath}/home.html">Home page</a></p>
+<br><br><br>
+<p><a href="${pageContext.request.contextPath}/home.html">Back to home page</a></p>
 
 </div>
 

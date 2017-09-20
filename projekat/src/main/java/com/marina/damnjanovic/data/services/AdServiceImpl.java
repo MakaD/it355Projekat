@@ -2,6 +2,7 @@ package com.marina.damnjanovic.data.services;
 
 import java.util.List;
 
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,34 +19,29 @@ public class AdServiceImpl implements AdService{
 	public void setAdDAO(AdDAO adDAO) {
 		this.adDAO = adDAO;
 	}
-
-	@Override
+	
 	@Transactional
 	public void addAd(AdModel ad) {
 		this.adDAO.addAd(ad);
 		
 	}
 
-	@Override
 	@Transactional
 	public void updateAd(AdModel ad) {
 		this.adDAO.updateAd(ad);
 		
 	}
 
-	@Override
 	@Transactional
 	public List<AdModel> listAds() {
 		return this.adDAO.listAds();
 	}
 
-	@Override
 	@Transactional
 	public AdModel getAdById(int id) {
 		return this.adDAO.getAdById(id);
 	}
 
-	@Override
 	@Transactional
 	public void removeAd(int id) {
 		this.adDAO.removeAd(id);
