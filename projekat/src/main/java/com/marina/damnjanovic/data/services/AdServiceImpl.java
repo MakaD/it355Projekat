@@ -11,6 +11,7 @@ import com.marina.damnjanovic.data.dao.AdDAO;
 import com.marina.damnjanovic.data.models.AdModel;
 
 @Service
+@Transactional
 public class AdServiceImpl implements AdService{
 	
 	@Autowired

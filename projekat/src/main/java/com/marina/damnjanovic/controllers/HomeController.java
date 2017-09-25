@@ -1,5 +1,6 @@
 package com.marina.damnjanovic.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ public class HomeController {
 	@Autowired
 	private AdService adService;
 	
+	@Autowired
 	public void setAdService(AdService adService) {
         this.adService = adService;
     }
@@ -50,12 +52,11 @@ public class HomeController {
 	*/
 
 	@RequestMapping(value = "/table", method = RequestMethod.GET)
-	public String table(Model model){
-		model.addAttribute("ad", new AdModel());
-		model.addAttribute("ads", this.adService.listAds());
-		return "ad";
+	public List<AdModel> table(){
 		
+		List<AdModel> list = new ArrayList<AdModel>();
+
+		//return this.adService.listAds();
+		return list;
 	}
-
-
 }
